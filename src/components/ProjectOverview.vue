@@ -11,7 +11,7 @@ interface Project {
 const projects = ref<Project[]>([]);
 
 onMounted(async () => {
-  const response = await axios.get('https://portfolio-backend-cnv6.onrender.com/api/projects');
+  const response = await axios.get('http://localhost/api/projects');
   projects.value = response.data;
 });
 </script>
